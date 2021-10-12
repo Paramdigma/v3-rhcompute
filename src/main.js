@@ -7,8 +7,7 @@ import router from "./router";
 window.rhino3dm().then(rh => {
   console.log(window, rh);
   const app = createApp(App);
-  // app.config.globalProperties.$rhino = rh;
-  app.prototype.rhino = rh;
+  app.config.globalProperties.$rhino = rh;
   // eslint-disable-next-line no-unused-vars
   app.use(router).mount("#app");
 });
