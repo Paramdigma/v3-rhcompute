@@ -45,7 +45,6 @@ export default {
     // this.compute();
   },
   methods: {
-    
     setRhinoCompute() {
       this.$RhinoCompute.url = "http://localhost:8081/";
       this.$RhinoCompute.apiKey =
@@ -149,10 +148,10 @@ export default {
     },
 
     // Shows or hides the loading spinner
-    showSpinner(enable) {
-      if (enable) document.getElementById("loader").style.display = "block";
-      else document.getElementById("loader").style.display = "none";
-    },
+    // showSpinner(enable) {
+    //   if (enable) document.getElementById("loader").style.display = "block";
+    //   else document.getElementById("loader").style.display = "none";
+    // },
 
     // Attempt to decode data tree item to rhino geometry
     decodeItem(item) {
